@@ -1,0 +1,111 @@
+# Artifactory Configuration
+artifactory:
+  url: "https://your-artifactory.example.com"
+
+  # Authentication: Use either api_key OR username/password
+  api_key: "YOUR_API_KEY_HERE"
+  # username: "your-username"
+  # password: "your-password"
+
+  verify_ssl: true
+  timeout: 30
+
+# Global Settings
+dry_run: true  # Set to false to actually delete artifacts
+log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+parallel_workers: 4  # Number of parallel workers for processing repositories
+report_file: "cleanup-report.txt"  # Optional: save report to file
+protect_running_images: true  # Protect Docker images running in clusters
+
+# Kubernetes/OpenShift Cluster Configuration (Optional)
+# Images currently running in these clusters will NOT be deleted, even if they exceed retention
+clusters:
+  # Kubernetes Cluster Example
+  - name: "production-k8s"
+    type: "kubernetes"
+    enabled: true
+    kubeconfig_path: null  # null = use default kubeconfig or in-cluster config
+    context: null  # null = use current context
+
+  # OpenShift Cluster Example
+  - name: "production-openshift"
+    type: "openshift"
+    enabled: true
+    kubeconfig_path: "/path/to/openshift/kubeconfig"  # Optional: path to kubeconfig
+    context: "production"  # Optional: specific context to use
+
+  # Additional cluster
+  - name: "staging-k8s"
+    type: "kubernetes"
+    enabled: false  # Disabled - won't be checked
+
+# Repository Configurations
+repositories:
+  # Maven Repository Example
+  - name: "libs-release-local"
+    type: "maven"
+    retention_days: 180
+    enabled: true
+    keep_minimum_versions: 3  # Keep at least 3 versions of each artifact
+    cleanup_snapshots_only: false  # Set to true to only clean SNAPSHOT versions
+    exclude_patterns:
+      - "*/critical-lib/*"  # Don't delete critical libraries
+    exclude_properties:
+      "release": "true"  # Don't delete artifacts with property release=true
+    include_properties: {}  # No mandatory properties
+    include_patterns: []  # Empty means include all (except excluded)
+
+  # Maven Snapshot Repository
+  - name: "libs-snapshot-local"
+    type: "maven"
+    retention_days: 30
+    enabled: true
+    keep_minimum_versions: 2
+    cleanup_snapshots_only: true  # Only clean snapshots
+
+  # Docker Repository Example
+  - name: "docker-local"
+    type: "docker"
+    retention_days: 90
+    enabled: true
+    keep_latest_tags: 5  # Keep 5 latest tags per image
+    exclude_patterns:
+      - "production/*"  # Don't delete production images
+      - "*/latest"  # Don't delete 'latest' tags
+
+  # NPM Repository Example
+  - name: "npm-local"
+    type: "npm"
+    retention_days: 120
+    enabled: true
+    keep_minimum_versions: 5  # Keep at least 5 versions of each package
+    exclude_patterns:
+      - "@company/core-*"  # Don't delete core packages
+
+  # NuGet Repository Example
+  - name: "nuget-local"
+    type: "nuget"
+    retention_days: 150
+    enabled: true
+    keep_minimum_versions: 4
+    exclude_patterns:
+      - "CompanyName.Core.*"
+
+  # Generic Repository Example
+  - name: "generic-local"
+    type: "generic"
+    retention_days: 60
+    enabled: true
+    recursive: true  # Recursively clean subdirectories
+    exclude_patterns:
+      - "*/backup/*"
+      - "*.config"  # Don't delete config files
+    include_patterns:
+      - "*.zip"  # Only clean zip files
+      - "*.tar.gz"
+
+  # Disabled Repository Example
+  - name: "archive-local"
+    type: "generic"
+    retention_days: 365
+    enabled: false  # This repository will be skipped
