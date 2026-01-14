@@ -1,0 +1,17 @@
+================================================================================
+PROJECTS WITH DIFFERENT CONTAINER COUNTS BETWEEN DR AND PROD
+================================================================================
+
+NAMESPACE                           DR COUNT        PROD COUNT      DIFFERENCE
+--------------------------------------------------------------------------------
+tp-ccom-int                         1               -               -1
+tp-clgr-bat                         -               2               +2
+tp-eft                              2               1               -1
+tp-insp-bat                         2               1               -1
+tp-peod                             2               1               -1
+tp-rdlr-int                         2               1               -1
+tp-rskn-int                         -               1               +1
+tp-rtln-bat                         2               1               -1
+
+--------------------------------------------------------------------------------
+Total: 9 projects with differences
