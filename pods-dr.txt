@@ -1,0 +1,726 @@
+NAMESPACE                      POD                                                COUNT      CONTAINERS
+============================================================================================================================================
+tp-acblc                       accountblocking-batch-b8c46f79d-tjn7g              1          accountblocking-batch
+tp-acblc                       accountblocking-batch-b8c46f79d-w558v              1          accountblocking-batch
+tp-acblc                       accountblocking-internal-7bdcd88dd6-q98hf          1          accountblocking-internal
+tp-acblc                       accountblocking-internal-7bdcd88dd6-xfcnp          1          accountblocking-internal
+tp-acblc-bat                   (no pods)                                          -          -
+tp-accar-int                   accountingarchive-internal-5ff97b8b6b-khblp        1          accountingarchive-internal
+tp-accar-int                   accountingarchive-internal-5ff97b8b6b-vsm6g        1          accountingarchive-internal
+tp-accey-bat                   accountingendyear-batch-5578987c8-n86j7            2          accountingendyear-batch,authenticator
+tp-accey-bat                   accountingendyear-batch-5578987c8-rwhhj            2          accountingendyear-batch,authenticator
+tp-accfx-bat                   accountingfx-batch-54c8667875-742z7                1          accountingfx-batch
+tp-accfx-bat                   accountingfx-batch-54c8667875-qt6hm                1          accountingfx-batch
+tp-accore-bat                  accountingcore-batch-544d6c744c-2rnqf              1          accountingcore-batch
+tp-acct                        accounting-internal-5dc78fbd5-xvjng                1          accounting-internal
+tp-acct                        accounting-internal-5dc78fbd5-zj2nr                1          accounting-internal
+tp-acct                        accounting-internal-5dc78fbd5-zzpzd                1          accounting-internal
+tp-acct-bat                    accounting-batch-fdc8c9478-zxcz9                   1          accounting-batch
+tp-adjt-exp                    adjust-experience-66dcfcb865-gk7hr                 1          adjust-experience
+tp-adjt-exp                    adjust-experience-66dcfcb865-v79vr                 1          adjust-experience
+tp-adjt-int                    adjust-internal-c88c5b489-4j2lh                    1          adjust-internal
+tp-adjt-int                    adjust-internal-c88c5b489-7nxvq                    1          adjust-internal
+tp-adjt-int                    adjust-internal-c88c5b489-8ndw2                    1          adjust-internal
+tp-adjt-int                    adjust-internal-c88c5b489-drp6r                    1          adjust-internal
+tp-adjt-int                    adjust-internal-c88c5b489-gdjpk                    1          adjust-internal
+tp-adjt-int                    adjust-internal-c88c5b489-l4tqt                    1          adjust-internal
+tp-anym                        customer-anonym-batch-6d844c78b8-kmzg9             2          customer-anonym-batch,authenticator
+tp-atld-int                    (no pods)                                          -          -
+tp-atm                         atm-internal-96c9cb575-mfzwn                       1          atm-internal
+tp-atm                         atm-internal-96c9cb575-vfp27                       1          atm-internal
+tp-atm-bat                     atm-batch-59f6c8f67d-bnkff                         1          atm-batch
+tp-atm-exp                     atm-experience-798885d67b-7xzzp                    1          atm-experience
+tp-atm-exp                     atm-experience-798885d67b-jgnv7                    1          atm-experience
+tp-atmacc-int                  (no pods)                                          -          -
+tp-atmh-int                    atm-host-internal-7d46997ff8-ctlm2                 1          atm-host-internal
+tp-atmh-int                    atm-host-internal-7d46997ff8-dpsqk                 1          atm-host-internal
+tp-atmh-int                    atm-host-internal-7d46997ff8-f2k57                 1          atm-host-internal
+tp-atmh-int                    atm-host-internal-7d46997ff8-jppkw                 1          atm-host-internal
+tp-atmh-int                    atm-host-internal-7d46997ff8-lg5c4                 1          atm-host-internal
+tp-bbdb-bat                    web-corporate-batch-66d4f68d66-lhj4n               1          web-corporate-batch
+tp-bbde-exp                    webcorporate-experience-6d94cf5498-ltttj           1          webcorporate-experience
+tp-bbde-exp                    webcorporate-experience-6d94cf5498-z8vdw           1          webcorporate-experience
+tp-bbdi                        web-corporate-internal-6df549f947-bhhkv            1          web-corporate-internal
+tp-bbdi                        web-corporate-internal-6df549f947-n2l27            1          web-corporate-internal
+tp-bbdp-int                    web-corporate-process-internal-5c8f9df48f-h6svd    1          web-corporate-process-internal
+tp-bbdp-int                    web-corporate-process-internal-5c8f9df48f-tgh5b    1          web-corporate-process-internal
+tp-bbdv-int                    verificationcorporate-internal-65d57c7d48-5xmkt    1          verificationcorporate-internal
+tp-bbdv-int                    verificationcorporate-internal-65d57c7d48-c6jjt    1          verificationcorporate-internal
+tp-bcle                        bpmcorporatelending-internal-5cbb759577-gvz7n      1          bpmcorporatelending-internal
+tp-bcle                        bpmcorporatelending-internal-5cbb759577-v8ndh      1          bpmcorporatelending-internal
+tp-bif-int                     (no pods)                                          -          -
+tp-bpmd                        (no pods)                                          -          -
+tp-bpmi                        bpm-integration-internal-555fcdf44b-29frp          2          bpm-integration-internal,authenticator
+tp-bpmi                        bpm-integration-internal-555fcdf44b-6jvss          2          bpm-integration-internal,authenticator
+tp-bpmi                        bpm-integration-internal-555fcdf44b-cdbxg          2          bpm-integration-internal,authenticator
+tp-bpmi                        bpm-integration-internal-555fcdf44b-sh8sn          2          bpm-integration-internal,authenticator
+tp-brnt-int                    branchnotification-internal-54dc8c8659-2w6ss       1          branchnotification-internal
+tp-brnt-int                    branchnotification-internal-54dc8c8659-nhbj5       1          branchnotification-internal
+tp-brnt-int                    branchnotification-internal-54dc8c8659-rw4gq       1          branchnotification-internal
+tp-brnt-int                    branchnotification-internal-54dc8c8659-zt2lx       1          branchnotification-internal
+tp-card                        card-internal-7b8d646dc6-9drfs                     1          card-internal
+tp-card                        card-internal-7b8d646dc6-kzbkp                     1          card-internal
+tp-card                        card-internal-7b8d646dc6-l8qfd                     1          card-internal
+tp-card                        card-internal-7b8d646dc6-pdvd8                     1          card-internal
+tp-card                        card-internal-7b8d646dc6-rssdd                     1          card-internal
+tp-card                        card-internal-7b8d646dc6-wkpxv                     1          card-internal
+tp-card-bat                    card-batch-6f5878f57b-rp2pl                        1          card-batch
+tp-card-exp                    card-experience-65699f54bf-hdqhn                   2          card-experience,authenticator
+tp-card-exp                    card-experience-65699f54bf-wtzpf                   2          card-experience,authenticator
+tp-card-ext                    card-external-85954dd85-6b72c                      1          card-external
+tp-card-ext                    card-external-85954dd85-8n64h                      1          card-external
+tp-cardcom-int                 cardcommon-internal-66b4b4796d-5gzbz               1          cardcommon-internal
+tp-cardorx-int                 cardorangeextra-internal-55c6fd4b8-fp824           2          cardorangeextra-internal,authenticator
+tp-cardorx-int                 cardorangeextra-internal-55c6fd4b8-vxqkl           2          cardorangeextra-internal,authenticator
+tp-cbgt                        cashboxandgrouptransfer-internal-5f8f7c94b4-cpqrk  1          cashboxandgrouptransfer-internal
+tp-cbgt                        cashboxandgrouptransfer-internal-5f8f7c94b4-m2kfx  1          cashboxandgrouptransfer-internal
+tp-ccbi-bat                    corporatecreditbureau-batch-67df57975b-jh9gx       1          corporatecreditbureau-batch
+tp-ccbi-bat                    corporatecreditbureau-batch-67df57975b-qzbg4       1          corporatecreditbureau-batch
+tp-ccbi-int                    corporatecreditbureau-internal-556cb57c7b-58gcq    1          corporatecreditbureau-internal
+tp-ccbi-int                    corporatecreditbureau-internal-556cb57c7b-dhb9b    1          corporatecreditbureau-internal
+tp-ccbi-int                    corporatecreditbureau-internal-556cb57c7b-k692q    1          corporatecreditbureau-internal
+tp-ccbi-int                    corporatecreditbureau-internal-556cb57c7b-wxzs5    1          corporatecreditbureau-internal
+tp-ccom-bat                    (no pods)                                          -          -
+tp-ccom-int                    commercialloancommission-internal-767b6d66d-scnm9  1          commercialloancommission-internal
+tp-ccom-int                    commercialloancommission-internal-767b6d66d-w8f9z  1          commercialloancommission-internal
+tp-ccqi-bat                    corporatecustomerqueryinfo-batch-67b8d88cbd-cm99f  1          corporatecustomerqueryinfo-batch
+tp-ccsb                        callcenter-internal-7c88d78797-dq8t4               1          callcenter-internal
+tp-ccsb                        callcenter-internal-7c88d78797-w8w2h               1          callcenter-internal
+tp-ccwp                        web-callcenter-internal-df7545568-hth57            1          web-callcenter-internal
+tp-ccwp                        web-callcenter-internal-df7545568-mx2tc            1          web-callcenter-internal
+tp-ccwp-exp                    (no pods)                                          -          -
+tp-cdcr                        criminaldatacorporate-batch-api-6d485fcb68-h27jh   1          criminaldatacorporate-batch-api
+tp-cdcr                        criminaldatacorporate-internal-5bd95f48bc-pk9zl    2          criminaldatacorporate-internal,authenticator
+tp-cdcr                        criminaldatacorporate-internal-5bd95f48bc-rqvzc    2          criminaldatacorporate-internal,authenticator
+tp-cep-int                     complexeventprocess-internal-57c8f5c98f-rb8ht      1          complexeventprocess-internal
+tp-cep-int                     complexeventprocess-internal-57c8f5c98f-s486p      1          complexeventprocess-internal
+tp-cevt-exp                    (no pods)                                          -          -
+tp-chat-int                    chatbot-internal-689b97c54-hm7mz                   1          chatbot-internal
+tp-chat-int                    chatbot-internal-689b97c54-mzckg                   1          chatbot-internal
+tp-cheq                        cheque-internal-695f9c8c9f-8hchz                   1          cheque-internal
+tp-cheq                        cheque-internal-695f9c8c9f-8jsl9                   1          cheque-internal
+tp-cheq-bat                    cheque-batch-594d8f95f6-f5nk9                      1          cheque-batch
+tp-cheq-exp                    (no pods)                                          -          -
+tp-clat                        corporatelendingautomation-internal-694b984cd9-4pqpn 1          corporatelendingautomation-internal
+tp-clat                        corporatelendingautomation-internal-694b984cd9-8vmk2 1          corporatelendingautomation-internal
+tp-clat-bat                    corporatelendingautomation-batch-5d8456795c-sjpnr  1          corporatelendingautomation-batch
+tp-clcp-int                    corporatelendingcampaign-internal-7b47854b64-58jbz 1          corporatelendingcampaign-internal
+tp-clcp-int                    corporatelendingcampaign-internal-7b47854b64-96xvh 1          corporatelendingcampaign-internal
+tp-cldg-exp                    (no pods)                                          -          -
+tp-cldi                        (no pods)                                          -          -
+tp-clgds                       corporatelendinggds-internal-7c4f8bb59-chrgc       1          corporatelendinggds-internal
+tp-clgds                       corporatelendinggds-internal-7c4f8bb59-qzz5q       1          corporatelendinggds-internal
+tp-clgds-bat                   corporatelendinggds-batch-7895489558-8rslp         1          corporatelendinggds-batch
+tp-clgds-bat                   corporatelendinggds-batch-7895489558-r5z64         1          corporatelendinggds-batch
+tp-clgr                        colleteralagreement-internal-api-8567754678-fvmgd  1          colleteralagreement-internal-api
+tp-clgr                        colleteralagreement-internal-api-8567754678-ghknb  1          colleteralagreement-internal-api
+tp-clgr-bat                    (no pods)                                          -          -
+tp-clig-bat                    corporatelendingintegration-batch-7d9fffb84b-dw9gf 1          corporatelendingintegration-batch
+tp-clig-bat                    corporatelendingintegration-batch-7d9fffb84b-m7xsc 1          corporatelendingintegration-batch
+tp-clig-int                    corporatelendinintegration-internal-5879f4d497-m6k2w 1          corporatelendinintegration-internal
+tp-clig-int                    corporatelendinintegration-internal-5879f4d497-n2hjm 1          corporatelendinintegration-internal
+tp-clit-int                    corporatelendingintelligence-internal-57445864f5-w8cbk 1          corporatelendingintelligence-internal
+tp-cmaa                        cashmanagementaccountactivity-batch-7b4955cb9d-hgv4z 2          cashmanagementaccountactivity-batch,authenticator
+tp-cmaa                        cashmanagementaccountactivity-batch-7b4955cb9d-xv8h4 2          cashmanagementaccountactivity-batch,authenticator
+tp-cmdl-bat                    corporatelendingmodel-batch-b9665bc7b-src7k        1          corporatelendingmodel-batch
+tp-cmdl-int                    corporatelendingmodel-internal-7f5bd6cdb6-hr296    2          corporatelendingmodel-internal,authenticator
+tp-cmdl-int                    corporatelendingmodel-internal-7f5bd6cdb6-w4kt5    2          corporatelendingmodel-internal,authenticator
+tp-cmlg-int                    mobilecorporatelogin-internal-api-7d78c5f85d-2jd84 2          mobilecorporatelogin-internal-api,authenticator
+tp-cmlg-int                    mobilecorporatelogin-internal-api-7d78c5f85d-4mstk 2          mobilecorporatelogin-internal-api,authenticator
+tp-cmlg-int                    mobilecorporatelogin-internal-api-7d78c5f85d-dkzt4 2          mobilecorporatelogin-internal-api,authenticator
+tp-cmlg-int                    mobilecorporatelogin-internal-api-7d78c5f85d-dr4ck 2          mobilecorporatelogin-internal-api,authenticator
+tp-cmlg-int                    mobilecorporatelogin-internal-api-7d78c5f85d-fbmnj 2          mobilecorporatelogin-internal-api,authenticator
+tp-cmlg-int                    mobilecorporatelogin-internal-api-7d78c5f85d-g7k76 2          mobilecorporatelogin-internal-api,authenticator
+tp-cmlg-int                    mobilecorporatelogin-internal-api-7d78c5f85d-ls8z7 2          mobilecorporatelogin-internal-api,authenticator
+tp-cmlg-int                    mobilecorporatelogin-internal-api-7d78c5f85d-sm5hh 2          mobilecorporatelogin-internal-api,authenticator
+tp-cmli                        commercialloaninstallment-internal-867ffcd7f5-2fxhn 1          commercialloaninstallment-internal
+tp-cmli                        commercialloaninstallment-internal-867ffcd7f5-hbjqp 1          commercialloaninstallment-internal
+tp-cmli                        commercialloaninstallment-internal-867ffcd7f5-l257f 1          commercialloaninstallment-internal
+tp-cmli-bat                    commercialloaninstallment-batch-74fb54fddd-b9pmm   1          commercialloaninstallment-batch
+tp-cmli-bat                    commercialloaninstallment-batch-74fb54fddd-w2tqf   1          commercialloaninstallment-batch
+tp-cmmt-bat                    (no pods)                                          -          -
+tp-cmmt-ext                    (no pods)                                          -          -
+tp-cmmt-int                    cashmanagementmoneytransfer-internal-d44597996-287kz 1          cashmanagementmoneytransfer-internal
+tp-cmmt-int                    cashmanagementmoneytransfer-internal-d44597996-ljj6z 1          cashmanagementmoneytransfer-internal
+tp-cmop-bat                    cashmanagementoperation-batch-6c75564745-btpkf     1          cashmanagementoperation-batch
+tp-cmop-bat                    cashmanagementoperation-batch-6c75564745-l2w67     1          cashmanagementoperation-batch
+tp-cmop-ext                    (no pods)                                          -          -
+tp-cmop-int                    cashmanagementoperation-internal-847759dfd4-s6wvm  1          cashmanagementoperation-internal
+tp-cmop-int                    cashmanagementoperation-internal-847759dfd4-z9cdb  1          cashmanagementoperation-internal
+tp-cmpg                        campaign-internal-58dc6fff74-9rxnr                 1          campaign-internal
+tp-cmpg                        campaign-internal-58dc6fff74-cr8xm                 1          campaign-internal
+tp-cmpg                        campaign-internal-58dc6fff74-mncst                 1          campaign-internal
+tp-cmpg                        campaign-internal-58dc6fff74-xrws8                 1          campaign-internal
+tp-cmpg                        campaign-internal-58dc6fff74-zdhln                 1          campaign-internal
+tp-cmpg-bat                    campaign-batch-api-5c7f8fbdb7-9xhmx                1          campaign-batch-api
+tp-cmpg-bat                    campaign-batch-api-5c7f8fbdb7-ngffh                1          campaign-batch-api
+tp-cmpgcore-int                campaigncore-internal-api-7b7d66b785-2flp7         1          campaigncore-internal-api
+tp-cmpgcore-int                campaigncore-internal-api-7b7d66b785-knc7m         1          campaigncore-internal-api
+tp-cmpn-int                    commercialloancampaign-internal-6cfbfb7d5d-4l9c2   1          commercialloancampaign-internal
+tp-cmpn-int                    commercialloancampaign-internal-6cfbfb7d5d-ghvxs   1          commercialloancampaign-internal
+tp-cmpr-bat                    (no pods)                                          -          -
+tp-cmpr-exp                    (no pods)                                          -          -
+tp-cmpr-int                    cashmanagementportal-internal-668c8bd47f-lqphg     1          cashmanagementportal-internal
+tp-cmpr-int                    cashmanagementportal-internal-668c8bd47f-m72qr     1          cashmanagementportal-internal
+tp-cmut                        commercialloanutil-internal-9c989cb89-6bl6p        1          commercialloanutil-internal
+tp-cmut                        commercialloanutil-internal-9c989cb89-rs9bj        1          commercialloanutil-internal
+tp-cmut-bat                    (no pods)                                          -          -
+tp-code-int                    (no pods)                                          -          -
+tp-cofi                        corporatefinancial-internal-59b97c9967-r4r44       1          corporatefinancial-internal
+tp-cofi                        corporatefinancial-internal-59b97c9967-zdvpg       1          corporatefinancial-internal
+tp-cofi-ext                    corporatefinancial-external-5f978ff668-7rzsp       1          corporatefinancial-external
+tp-cofi-ext                    corporatefinancial-external-5f978ff668-nnbp9       1          corporatefinancial-external
+tp-cogu-bat                    collateralguarantee-batch-666cf96bfb-ntbm8         1          collateralguarantee-batch
+tp-cogu-bat                    collateralguarantee-batch-666cf96bfb-vrbd6         1          collateralguarantee-batch
+tp-cogu-int                    collateralguarantee-internal-api-7cdc4d479d-57mst  1          collateralguarantee-internal-api
+tp-cogu-int                    collateralguarantee-internal-api-7cdc4d479d-cst75  1          collateralguarantee-internal-api
+tp-cohy-exp                    collateralhypotec-experience-7b64bf859f-pt568      1          collateralhypotec-experience
+tp-cohy-exp                    collateralhypotec-experience-7b64bf859f-pwx9v      1          collateralhypotec-experience
+tp-cohy-ext                    collateralhypotec-external-7d64d44cc8-4w96b        1          collateralhypotec-external
+tp-cohy-ext                    collateralhypotec-external-7d64d44cc8-7w98g        1          collateralhypotec-external
+tp-cohy-int                    collateralhypotec-internal-c5cc996c9-9r8mc         1          collateralhypotec-internal
+tp-cohy-int                    collateralhypotec-internal-c5cc996c9-qgfbp         1          collateralhypotec-internal
+tp-coin-int                    collateralinitiative-internal-597ffcff4d-9jdcm     1          collateralinitiative-internal
+tp-coin-int                    collateralinitiative-internal-597ffcff4d-sc6f2     1          collateralinitiative-internal
+tp-coll                        (no pods)                                          -          -
+tp-coml                        commercialloan-internal-fdccf84bb-8mpzv            1          commercialloan-internal
+tp-coml                        commercialloan-internal-fdccf84bb-cfvbg            1          commercialloan-internal
+tp-coml                        commercialloan-internal-fdccf84bb-djktb            1          commercialloan-internal
+tp-coml-bat                    commercialloan-batch-76dd49c899-2nlzk              1          commercialloan-batch
+tp-coml-bat                    commercialloan-batch-76dd49c899-q7rr9              1          commercialloan-batch
+tp-coml-ext                    commercialloan-external-7bd9c674bc-dsdht           1          commercialloan-external
+tp-coml-ext                    commercialloan-external-7bd9c674bc-pgrlt           1          commercialloan-external
+tp-corpi-int                   (no pods)                                          -          -
+tp-cpld                        corporatepled-internal-api-5496f7fc6b-bwcd6        1          corporatepled-internal-api
+tp-cpld                        corporatepled-internal-api-5496f7fc6b-mxbl8        1          corporatepled-internal-api
+tp-cprc-bat                    (no pods)                                          -          -
+tp-cprc-int                    commercialloanpricing-internal-5fb54bb89d-5mzkv    1          commercialloanpricing-internal
+tp-cprc-int                    commercialloanpricing-internal-5fb54bb89d-cld69    1          commercialloanpricing-internal
+tp-crci-int                    (no pods)                                          -          -
+tp-crcl-bat                    corporatecollection-batch-96784877d-z7scp          1          corporatecollection-batch
+tp-crcl-int                    corporatecollection-internal-86ddcc8fcf-2hp4f      1          corporatecollection-internal
+tp-crd-bkm-int                 (no pods)                                          -          -
+tp-crda-bat                    cardaccounting-batch-564cc7f7bc-44qkf              1          cardaccounting-batch
+tp-crda-bat                    cardaccounting-batch-564cc7f7bc-k95pb              1          cardaccounting-batch
+tp-crda-int                    cardaccounting-internal-84b998dfb6-n4l9c           1          cardaccounting-internal
+tp-crda-int                    cardaccounting-internal-84b998dfb6-xx97x           1          cardaccounting-internal
+tp-cred-int                    corporatecustomercredibilityinfo-internal-api-7ffb7775f-8hzfr 2          corporatecustomercredibilityinfo-internal-api,authenticator
+tp-cred-int                    corporatecustomercredibilityinfo-internal-api-7ffb7775f-m99bp 2          corporatecustomercredibilityinfo-internal-api,authenticator
+tp-crm-bat                     (no pods)                                          -          -
+tp-crm-int                     crm-internal-api-c7947499d-k222m                   2          crm-internal-api,authenticator
+tp-crm-int                     crm-internal-api-c7947499d-q9frl                   2          crm-internal-api,authenticator
+tp-crmb-exp                    mobilecorporate-experience-api-54bc45d45f-55rvq    1          mobilecorporate-experience-api
+tp-crmb-exp                    mobilecorporate-experience-api-54bc45d45f-7jws4    1          mobilecorporate-experience-api
+tp-crmb-int                    mobilecorporate-internal-5c4d755d65-kq9gd          1          mobilecorporate-internal
+tp-crmb-int                    mobilecorporate-internal-5c4d755d65-xmfx8          1          mobilecorporate-internal
+tp-crms-int                    complianceriskmanagement-internal-5c8bd94db6-dvsgh 1          complianceriskmanagement-internal
+tp-crod                        commercialloanoverdraft-internal-5bb758dfc7-5m6bc  1          commercialloanoverdraft-internal
+tp-crod                        commercialloanoverdraft-internal-5bb758dfc7-swd6x  1          commercialloanoverdraft-internal
+tp-crod-bat                    commercialloanoverdraft-batch-5fddb95f8f-h7fgl     1          commercialloanoverdraft-batch
+tp-crod-bat                    commercialloanoverdraft-batch-5fddb95f8f-ntwvt     1          commercialloanoverdraft-batch
+tp-crpc-int                    web-corporate-cache-internal-cb6b5c459-6swkr       1          web-corporate-cache-internal
+tp-crpc-int                    web-corporate-cache-internal-cb6b5c459-9pp8r       1          web-corporate-cache-internal
+tp-crpr                        coreparameters-internal-7c7f675b8d-hqc5w           1          coreparameters-internal
+tp-crpr                        coreparameters-internal-7c7f675b8d-qhrp2           1          coreparameters-internal
+tp-crsg-exp                    corpsecuritygateway-experience-api-75899fc9cc-d5d64 2          corpsecuritygateway-experience-api,authenticator
+tp-crsg-exp                    corpsecuritygateway-experience-api-75899fc9cc-r5qdb 2          corpsecuritygateway-experience-api,authenticator
+tp-crsg-exp                    corpsecuritygateway-experience-api-75899fc9cc-xwgrn 2          corpsecuritygateway-experience-api,authenticator
+tp-cust                        customer-internal-9b9479c54-dckxp                  1          customer-internal
+tp-cust                        customer-internal-9b9479c54-hck99                  1          customer-internal
+tp-cust                        customer-internal-9b9479c54-j87qp                  1          customer-internal
+tp-cust                        customer-internal-9b9479c54-n6ckh                  1          customer-internal
+tp-cust                        customer-internal-9b9479c54-qjhr6                  1          customer-internal
+tp-cust                        customer-internal-9b9479c54-z72r6                  1          customer-internal
+tp-cust-bat                    customer-batch-7c869bf4b8-bfk4c                    1          customer-batch
+tp-custdt-int                  customerdigital-internal-6dc6ddb894-fmk5f          1          customerdigital-internal
+tp-custei-int                  customer-extinteg-internal-896884656-fzh9d         1          customer-extinteg-internal
+tp-dbup-int                    dbupgrade-internal-68c8f6b958-246lt                2          dbupgrade-internal,authenticator
+tp-dbup-int                    dbupgrade-internal-68c8f6b958-nhbd7                2          dbupgrade-internal,authenticator
+tp-dccs-int                    (no pods)                                          -          -
+tp-ddsy                        directdebitsystem-internal-767ffc77d5-9zfbs        1          directdebitsystem-internal
+tp-ddsy                        directdebitsystem-internal-767ffc77d5-z88wd        1          directdebitsystem-internal
+tp-ddsy-bat                    directdebitsystem-batch-74c6f9dcd8-wsjnb           1          directdebitsystem-batch
+tp-ddsy-bat                    directdebitsystem-batch-74c6f9dcd8-x6cd9           1          directdebitsystem-batch
+tp-ddsy-ext                    (no pods)                                          -          -
+tp-devops                      (no pods)                                          -          -
+tp-dion-int                    (no pods)                                          -          -
+tp-dmcs-int                    (no pods)                                          -          -
+tp-dmds-int                    (no pods)                                          -          -
+tp-dmsy-exp                    documentmanagementsystem-experience-78b5f487bb-hr466 1          documentmanagementsystem-experience
+tp-dmsy-exp                    documentmanagementsystem-experience-78b5f487bb-q8nlh 1          documentmanagementsystem-experience
+tp-dprc-bat                    (no pods)                                          -          -
+tp-dprc-int                    depositpricing-internal-7955ffc47f-9ng8v           1          depositpricing-internal
+tp-dprc-int                    depositpricing-internal-7955ffc47f-l82jz           1          depositpricing-internal
+tp-dsin                        distraintandinvestigations-batch-6757d8f8d8-kkc8q  1          distraintandinvestigations-batch
+tp-dsin                        distraintandinvestigations-batch-6757d8f8d8-swr6h  1          distraintandinvestigations-batch
+tp-dsin                        distraintandinvestigations-batch-api-56d74fd8df-lczd6 2          distraintandinvestigations-batch-api,authenticator
+tp-dsin                        distraintandinvestigations-internal-55df8dbcdf-g8xzc 1          distraintandinvestigations-internal
+tp-dsin                        distraintandinvestigations-internal-55df8dbcdf-rcvqt 1          distraintandinvestigations-internal
+tp-dsin-bat                    (no pods)                                          -          -
+tp-eft                         eft-internal-api-78786df47-9cnzs                   2          eft-internal-api,authenticator
+tp-eft                         eft-internal-api-78786df47-bmg6r                   2          eft-internal-api,authenticator
+tp-eft                         eft-internal-api-78786df47-dg8fd                   2          eft-internal-api,authenticator
+tp-eft                         eft-internal-api-78786df47-j9drd                   2          eft-internal-api,authenticator
+tp-eft-bat                     eft-batch-855d4b64f-6hdwc                          1          eft-batch
+tp-eft-bat                     eft-batch-855d4b64f-f5rz8                          1          eft-batch
+tp-empl                        employee-internal-597c9fb94c-j8jdv                 1          employee-internal
+tp-empl                        employee-internal-597c9fb94c-xhqsq                 1          employee-internal
+tp-empl-bat                    employee-batch-5d9b7b7db8-677kt                    1          employee-batch
+tp-esg-int                     (no pods)                                          -          -
+tp-esqt-bat                    (no pods)                                          -          -
+tp-evhb                        (no pods)                                          -          -
+tp-ewrs                        earlywarningsystem-internal-5f7495f6ff-7jr67       1          earlywarningsystem-internal
+tp-ewrs-bat                    earlywarningsystem-batch-6dbdf6f474-xtqgk          1          earlywarningsystem-batch
+tp-exch-bat                    (no pods)                                          -          -
+tp-exch-int                    exchange-internal-776cb76448-8ls8n                 1          exchange-internal
+tp-exch-int                    exchange-internal-776cb76448-rcj2z                 1          exchange-internal
+tp-exgr-bat                    (no pods)                                          -          -
+tp-exgr-int                    exgr-internal-9b4f5f5c7-26xbd                      1          exgr-internal
+tp-exgr-int                    exgr-internal-9b4f5f5c7-58pdd                      1          exgr-internal
+tp-exob-int                    expenseobjections-internal-664d47565d-6drrh        1          expenseobjections-internal
+tp-exob-int                    expenseobjections-internal-664d47565d-lg4t9        1          expenseobjections-internal
+tp-expo-bat                    exportproduct-batch-67b4c8444f-hwq44               1          exportproduct-batch
+tp-expo-bat                    exportproduct-batch-67b4c8444f-j7lw7               1          exportproduct-batch
+tp-expo-int                    exportproduct-internal-5c7cdcf455-jqfq6            1          exportproduct-internal
+tp-expo-int                    exportproduct-internal-5c7cdcf455-n5fhh            1          exportproduct-internal
+tp-exps                        expense-batch-79c4dd9fbc-jl8d7                     2          expense-batch,authenticator
+tp-exps                        expense-internal-67f7ddbc5b-g2pvp                  1          expense-internal
+tp-exps                        expense-internal-67f7ddbc5b-tj4c2                  1          expense-internal
+tp-fast                        fast-internal-675b8457cc-55mr7                     1          fast-internal
+tp-fast                        fast-internal-675b8457cc-cn66h                     1          fast-internal
+tp-fast                        fast-internal-675b8457cc-fmppl                     1          fast-internal
+tp-fast                        fast-internal-675b8457cc-j5p9s                     1          fast-internal
+tp-fast                        fast-internal-675b8457cc-wvlgn                     1          fast-internal
+tp-fast                        fast-internal-675b8457cc-xfclf                     1          fast-internal
+tp-fast-bat                    fast-batch-77474f8d58-6cdlz                        1          fast-batch
+tp-fast-bat                    fast-batch-77474f8d58-zcgfv                        1          fast-batch
+tp-fraud                       fraud-internal-d5fc4db8f-2htfl                     2          fraud-internal,authenticator
+tp-fraud                       fraud-internal-d5fc4db8f-4pdvw                     2          fraud-internal,authenticator
+tp-fraud                       fraud-internal-d5fc4db8f-6j9np                     2          fraud-internal,authenticator
+tp-fraud                       fraud-internal-d5fc4db8f-gk2mk                     2          fraud-internal,authenticator
+tp-fraud                       fraud-internal-d5fc4db8f-khv95                     2          fraud-internal,authenticator
+tp-fraud                       fraud-internal-d5fc4db8f-kvqgg                     2          fraud-internal,authenticator
+tp-fraud-exp                   fraud-experience-586f5bbdf4-dj9x8                  1          fraud-experience
+tp-fraud-exp                   fraud-experience-586f5bbdf4-msvld                  1          fraud-experience
+tp-fraud-ext                   (no pods)                                          -          -
+tp-frc-int                     fircosoft-internal-687dd8f45c-887dn                1          fircosoft-internal
+tp-frc-int                     fircosoft-internal-687dd8f45c-8xhkd                1          fircosoft-internal
+tp-frex                        foreign-exchange-internal-7fc88b7f46-4m6hn         1          foreign-exchange-internal
+tp-frex                        foreign-exchange-internal-7fc88b7f46-c4v9l         1          foreign-exchange-internal
+tp-frex                        foreign-exchange-internal-7fc88b7f46-hhrf2         1          foreign-exchange-internal
+tp-frex                        foreign-exchange-internal-7fc88b7f46-jjkpj         1          foreign-exchange-internal
+tp-frex                        foreign-exchange-internal-7fc88b7f46-wr4nw         1          foreign-exchange-internal
+tp-frex                        foreign-exchange-internal-7fc88b7f46-xc9q6         1          foreign-exchange-internal
+tp-frex-bat                    foreign-exchange-batch-cbf98d67c-cbtvp             1          foreign-exchange-batch
+tp-frtr                        foreigntrade-batch-696b7f5f4b-877l8                1          foreigntrade-batch
+tp-frtr                        foreigntrade-batch-696b7f5f4b-xwx2b                1          foreigntrade-batch
+tp-frtr                        foreigntrade-internal-5bcb57bb7b-67zlq             1          foreigntrade-internal
+tp-frtr                        foreigntrade-internal-5bcb57bb7b-gnczg             1          foreigntrade-internal
+tp-fund                        fund-internal-854ff54f79-bxksh                     1          fund-internal
+tp-fund                        fund-internal-854ff54f79-nfd5b                     1          fund-internal
+tp-fund-bat                    fund-batch-api-6869f89b77-p7sfs                    1          fund-batch-api
+tp-fund-bat                    fund-batch-api-6869f89b77-sm5gf                    1          fund-batch-api
+tp-fund-ext                    fund-external-79c589d67f-fmhjj                     1          fund-external
+tp-fund-ext                    fund-external-79c589d67f-mfjn5                     1          fund-external
+tp-fxao-bat                    fxalertorder-batch-86c6774746-q9tdq                1          fxalertorder-batch
+tp-ibuy-bat                    (no pods)                                          -          -
+tp-imtc                        (no pods)                                          -          -
+tp-inft                        internalfundtransfer-internal-cc7df8865-4kl4m      1          internalfundtransfer-internal
+tp-inft                        internalfundtransfer-internal-cc7df8865-dlgtx      1          internalfundtransfer-internal
+tp-inft                        internalfundtransfer-internal-cc7df8865-nzk98      1          internalfundtransfer-internal
+tp-inft                        internalfundtransfer-internal-cc7df8865-rvjdq      1          internalfundtransfer-internal
+tp-inft-bat                    internalfundtransfer-batch-api-9497c9fc7-b6gqv     2          internalfundtransfer-batch-api,authenticator
+tp-inft-bat                    internalfundtransfer-batch-api-9497c9fc7-q7zg9     2          internalfundtransfer-batch-api,authenticator
+tp-ingo                        ingo-internal-86c8b98bbd-5xvsf                     1          ingo-internal
+tp-ingo                        ingo-internal-86c8b98bbd-n2799                     1          ingo-internal
+tp-ingo                        ingo-internal-86c8b98bbd-xjtd2                     1          ingo-internal
+tp-ingo-bat                    ingo-batch-847457478d-ctpwp                        1          ingo-batch
+tp-inky                        (no pods)                                          -          -
+tp-insp                        insuranceproducts-internal-api-6c87c998b9-6hdrg    1          insuranceproducts-internal-api
+tp-insp                        insuranceproducts-internal-api-6c87c998b9-fmlpw    1          insuranceproducts-internal-api
+tp-insp                        insuranceproducts-internal-api-6c87c998b9-kxghk    1          insuranceproducts-internal-api
+tp-insp                        insuranceproducts-internal-api-6c87c998b9-s2ml7    1          insuranceproducts-internal-api
+tp-insp                        insuranceproducts-internal-api-6c87c998b9-xxgn5    1          insuranceproducts-internal-api
+tp-insp-bat                    insuranceproducts-batch-api-99c869978-7d79k        2          insuranceproducts-batch-api,authenticator
+tp-insp-exp                    insuranceproducts-experience-7b4bcd589f-42hwh      1          insuranceproducts-experience
+tp-insp-exp                    insuranceproducts-experience-7b4bcd589f-77dp4      1          insuranceproducts-experience
+tp-insp-ext                    insuranceproducts-external-57b7ccbf58-58ld9        1          insuranceproducts-external
+tp-insp-ext                    insuranceproducts-external-57b7ccbf58-qx77v        1          insuranceproducts-external
+tp-intc-int                    web-retail-cache-internal-57856496b6-kqx82         1          web-retail-cache-internal
+tp-intx                        web-retail-internal-5f8d4c669f-247ks               1          web-retail-internal
+tp-intx                        web-retail-internal-5f8d4c669f-gmwcj               1          web-retail-internal
+tp-intx                        web-retail-internal-5f8d4c669f-gtdzs               1          web-retail-internal
+tp-intx                        web-retail-internal-5f8d4c669f-pxdl8               1          web-retail-internal
+tp-intx                        web-retail-internal-5f8d4c669f-znrrr               1          web-retail-internal
+tp-intx-bat                    webretail-batch-685cff6486-8zxxm                   1          webretail-batch
+tp-invp                        invoicepayments-internal-6c96db9875-dx7p4          2          invoicepayments-internal,authenticator
+tp-invp                        invoicepayments-internal-6c96db9875-vxwfd          2          invoicepayments-internal,authenticator
+tp-invp-bat                    invoicepayments-batch-84fcbb78cc-bc6jt             1          invoicepayments-batch
+tp-kndr-bat                    kondor-batch-678f5fb659-fhdcj                      1          kondor-batch
+tp-kndr-int                    kondor-internal-844dbc65d6-2qntg                   1          kondor-internal
+tp-kndr-int                    kondor-internal-844dbc65d6-bgjgf                   1          kondor-internal
+tp-kyc-int                     kyc-internal-d9995789f-f2vxr                       1          kyc-internal
+tp-kyc-int                     kyc-internal-d9995789f-jqgpt                       1          kyc-internal
+tp-kycout-int                  (no pods)                                          -          -
+tp-lnld                        lending-loandeposit-internal-7579555864-gfxmb      1          lending-loandeposit-internal
+tp-lnld                        lending-loandeposit-internal-7579555864-j9rks      1          lending-loandeposit-internal
+tp-lnld                        lending-loandeposit-internal-7579555864-mwsn9      1          lending-loandeposit-internal
+tp-lnld                        lending-loandeposit-internal-7579555864-xrsvb      1          lending-loandeposit-internal
+tp-lnld                        lending-loandeposit-internal-7579555864-z99lb      1          lending-loandeposit-internal
+tp-lnld-bat                    lending-loandeposit-batch-7fd9bb787-2bb4n          1          lending-loandeposit-batch
+tp-loin                        commercialloanletter-internal-6fb4544b84-dcfsb     1          commercialloanletter-internal
+tp-loin                        commercialloanletter-internal-6fb4544b84-ppq5b     1          commercialloanletter-internal
+tp-loin-bat                    (no pods)                                          -          -
+tp-loin-exp                    commercialloanletter-experience-6c94bfddc6-llmlb   1          commercialloanletter-experience
+tp-loin-exp                    commercialloanletter-experience-6c94bfddc6-zxd8f   1          commercialloanletter-experience
+tp-loin-ext                    commercialloanletter-external-95b8d789c-cgfz5      1          commercialloanletter-external
+tp-loin-ext                    commercialloanletter-external-95b8d789c-kcx75      1          commercialloanletter-external
+tp-ltry                        lottery-internal-c89748fbb-vv59s                   2          lottery-internal,authenticator
+tp-ltry-bat                    lottery-batch-5fdd5574fd-6brjx                     1          lottery-batch
+tp-mkk                         mkk-internal-567b7b754d-ctqxb                      1          mkk-internal
+tp-mkk                         mkk-internal-567b7b754d-zgmlx                      1          mkk-internal
+tp-mkk-bat                     mkk-batch-567df7f84c-f25dw                         1          mkk-batch
+tp-mkk-ext                     mkk-external-dd494dc7b-4ws9q                       1          mkk-external
+tp-mkk-ext                     mkk-external-dd494dc7b-sccg5                       1          mkk-external
+tp-mnor                        moneyorder-internal-584c7d866c-crls8               1          moneyorder-internal
+tp-mnor                        moneyorder-internal-584c7d866c-fjzxg               1          moneyorder-internal
+tp-mnor                        moneyorder-internal-584c7d866c-tv7d7               1          moneyorder-internal
+tp-mnor                        moneyorder-internal-584c7d866c-vwhfb               1          moneyorder-internal
+tp-mnor-bat                    moneyorder-batch-6bdb989d94-drgfq                  1          moneyorder-batch
+tp-mnor-bat                    moneyorder-batch-6bdb989d94-m85q9                  1          moneyorder-batch
+tp-mnyt                        moneytransfer-experience-666dc4665c-58gk7          1          moneytransfer-experience
+tp-mnyt                        moneytransfer-experience-666dc4665c-9pdb7          1          moneytransfer-experience
+tp-mnyt                        moneytransfer-experience-666dc4665c-gcchn          1          moneytransfer-experience
+tp-mnyt                        moneytransfer-experience-666dc4665c-hbwsz          1          moneytransfer-experience
+tp-mobl                        mobile-retail-internal-54d56885-4z72d              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-56kwt              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-64mg4              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-748n4              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-8qw8x              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-947j6              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-d927c              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-fm7s9              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-hll5f              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-hr5nq              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-jkbfx              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-n4zwr              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-qtjxg              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-sq7p6              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-srxbt              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-swl2s              1          mobile-retail-internal
+tp-mobl                        mobile-retail-internal-54d56885-xf46b              1          mobile-retail-internal
+tp-mobl-bat                    mobile-retail-batch-7949dbf9cc-gk7mw               1          mobile-retail-batch
+tp-mobl-bat                    mobile-retail-batch-7949dbf9cc-lgr78               1          mobile-retail-batch
+tp-mrbn-bat                    (no pods)                                          -          -
+tp-mrbn-int                    (no pods)                                          -          -
+tp-mrch                        merchant-internal-7cc5bfd47b-4pt66                 1          merchant-internal
+tp-mrch-bat                    merchant-batch-6d6bd6b457-c9rl2                    1          merchant-batch
+tp-mrch-exp                    merchant-experience-api-6fb897db65-dxkxk           2          merchant-experience-api,authenticator
+tp-mrch-exp                    merchant-experience-api-6fb897db65-gpp6j           2          merchant-experience-api,authenticator
+tp-mrch-ext                    merchant-external-api-c98547f47-dqt2w              2          merchant-external-api,authenticator
+tp-mrkpl                       marketplace-internal-866bf7fb7-llj9x               1          marketplace-internal
+tp-mrkpl                       marketplace-internal-866bf7fb7-mcbrg               1          marketplace-internal
+tp-msms-bat                    (no pods)                                          -          -
+tp-msms-int                    messageservicesms-internal-76658f9f5-5ttjk         1          messageservicesms-internal
+tp-msms-int                    messageservicesms-internal-76658f9f5-7gckh         1          messageservicesms-internal
+tp-mtce                        masstransaction-internal-77d568bcd-5dktn           1          masstransaction-internal
+tp-mtce                        masstransaction-internal-77d568bcd-jw822           1          masstransaction-internal
+tp-nbox                        neobox-internal-58487bbf66-vbzjg                   1          neobox-internal
+tp-nbox                        neobox-internal-58487bbf66-vhhzr                   1          neobox-internal
+tp-ncrypt-int                  (no pods)                                          -          -
+tp-neontc                      neonotice-internal-584d556d6f-gwdzt                1          neonotice-internal
+tp-neontc                      neonotice-internal-584d556d6f-zt692                1          neonotice-internal
+tp-neoway                      (no pods)                                          -          -
+tp-nfra                        nonfinancialriskanalytics-batch-5b68646c76-g5qk5   1          nonfinancialriskanalytics-batch
+tp-nfra                        nonfinancialriskanalytics-internal-f54b8d94c-l6znz 1          nonfinancialriskanalytics-internal
+tp-nmail                       neomail-internal-754b69fcc-jccl6                   1          neomail-internal
+tp-nmail                       neomail-internal-754b69fcc-nt5b5                   1          neomail-internal
+tp-nmopr                       neomediaoperations-internal-649f679f-8rq97         1          neomediaoperations-internal
+tp-nmopr                       neomediaoperations-internal-649f679f-hwzn5         1          neomediaoperations-internal
+tp-nmopr                       neomediaoperations-internal-649f679f-rtnlr         1          neomediaoperations-internal
+tp-nmopr                       neomediaoperations-internal-649f679f-wx5x7         1          neomediaoperations-internal
+tp-nmplyr                      (no pods)                                          -          -
+tp-npla-bat                    nonperformingtransfer-batch-745468965c-twjw7       1          nonperformingtransfer-batch
+tp-npla-bat                    nonperformingtransfer-batch-745468965c-wjxbr       1          nonperformingtransfer-batch
+tp-npla-int                    nonperformingtransfer-internal-649774cb7f-krv68    1          nonperformingtransfer-internal
+tp-npla-int                    nonperformingtransfer-internal-649774cb7f-rrwsr    1          nonperformingtransfer-internal
+tp-nplc                        nonperformingloancorp-internal-5cdc49565-bvxfv     1          nonperformingloancorp-internal
+tp-nplc-bat                    nonperformingloancorp-batch-7b46b6d6dd-2cgc6       1          nonperformingloancorp-batch
+tp-nplk-int                    nonperformingclosure-internal-6f6b6c64f6-cr6hq     2          nonperformingclosure-internal,authenticator
+tp-nplk-int                    nonperformingclosure-internal-6f6b6c64f6-q2qj8     2          nonperformingclosure-internal,authenticator
+tp-nplr                        nonperformingloanretail-internal-77c8f9b4bb-qgzgj  1          nonperformingloanretail-internal
+tp-nplr-bat                    nonperformingloanretail-batch-545575b599-46wbl     1          nonperformingloanretail-batch
+tp-nplt-bat                    nonperformingcollection-batch-75bf695d68-b4f87     2          nonperformingcollection-batch,authenticator
+tp-nplt-bat                    nonperformingcollection-batch-75bf695d68-ztxb2     2          nonperformingcollection-batch,authenticator
+tp-nplt-int                    nonperformingcollection-internal-fd46bb74b-8d2jl   1          nonperformingcollection-internal
+tp-nprc-bat                    nonperformingretailcollection-batch-5587c9c964-mzddq 1          nonperformingretailcollection-batch
+tp-npush-int                   (no pods)                                          -          -
+tp-nquota-int                  neoquota-internal-6d684c6446-8kn8m                 1          neoquota-internal
+tp-nquota-int                  neoquota-internal-6d684c6446-mwmhz                 1          neoquota-internal
+tp-nrem                        neorem-internal-5695c5dfb8-hh8gm                   1          neorem-internal
+tp-nrem                        neorem-internal-5695c5dfb8-rfmht                   1          neorem-internal
+tp-nsign-int                   neosign-internal-6456b8f5fc-2w6c9                  1          neosign-internal
+tp-nsign-int                   neosign-internal-6456b8f5fc-2zrrz                  1          neosign-internal
+tp-nsphere-int                 (no pods)                                          -          -
+tp-nticket-int                 neoticket-internal-7dcb479cd-79lk8                 1          neoticket-internal
+tp-nticket-int                 neoticket-internal-7dcb479cd-gfhvh                 1          neoticket-internal
+tp-ntsms                       notificationsms-internal-c486f66f7-58kwt           1          notificationsms-internal
+tp-ntsms                       notificationsms-internal-c486f66f7-tpwql           1          notificationsms-internal
+tp-nway-int                    (no pods)                                          -          -
+tp-oa-engine                   (no pods)                                          -          -
+tp-oaac-int                    (no pods)                                          -          -
+tp-oaen-int                    (no pods)                                          -          -
+tp-oaev-int                    oa-event-internal-api-5d4444479c-pq2ch             1          oa-event-internal-api
+tp-oaev-int                    oa-event-internal-api-5d4444479c-sks4d             1          oa-event-internal-api
+tp-obnk                        openbanking-internal-6759cc4754-jl8gb              1          openbanking-internal
+tp-obnk                        openbanking-internal-6759cc4754-tpxfz              1          openbanking-internal
+tp-obnk-bat                    openbanking-batch-68b589567c-7zb2g                 1          openbanking-batch
+tp-obnk-bat                    openbanking-batch-68b589567c-f5pqz                 1          openbanking-batch
+tp-obnk-exp                    openbanking-experience-6567dfcb5d-fq5mt            1          openbanking-experience
+tp-obnk-exp                    openbanking-experience-6567dfcb5d-qjqs2            1          openbanking-experience
+tp-obnk-ext                    openbanking-external-9f47c95bc-pm2nv               1          openbanking-external
+tp-obnk-ext                    openbanking-external-9f47c95bc-skkjx               1          openbanking-external
+tp-onbr                        onlinebanking-retail-experience-85d5c8779d-599vd   1          onlinebanking-retail-experience
+tp-onbr                        onlinebanking-retail-experience-85d5c8779d-6b2zg   1          onlinebanking-retail-experience
+tp-onbr                        onlinebanking-retail-experience-85d5c8779d-nrskr   1          onlinebanking-retail-experience
+tp-onbr                        onlinebanking-retail-experience-85d5c8779d-t7245   1          onlinebanking-retail-experience
+tp-oncr-exp                    onlinebanking-corporate-experience-6dfc4c5f9-dl5xc 1          onlinebanking-corporate-experience
+tp-oncr-exp                    onlinebanking-corporate-experience-6dfc4c5f9-qpnbd 1          onlinebanking-corporate-experience
+tp-oras                        (no pods)                                          -          -
+tp-orgdash-exp                 orangedashboard-experience-6dc79f4687-gr9qr        1          orangedashboard-experience
+tp-orgdash-exp                 orangedashboard-experience-6dc79f4687-pqkbr        1          orangedashboard-experience
+tp-orop-int                    orderoperation-internal-5f7fd7ccdc-k6nmg           1          orderoperation-internal
+tp-orop-int                    orderoperation-internal-5f7fd7ccdc-mdd2x           1          orderoperation-internal
+tp-pacc-int                    personaloverdraft-accounting-internal-api-b8495964d-9btlk 1          personaloverdraft-accounting-internal-api
+tp-pacc-int                    personaloverdraft-accounting-internal-api-b8495964d-zxr97 1          personaloverdraft-accounting-internal-api
+tp-paos                        proxyaccountoperations-internal-6d896f9f4b-6pdpq   1          proxyaccountoperations-internal
+tp-paos                        proxyaccountoperations-internal-6d896f9f4b-j28nm   1          proxyaccountoperations-internal
+tp-paut                        platform-auth-internal-5778cf6c58-9g4nv            1          platform-auth-internal
+tp-paut                        platform-auth-internal-5778cf6c58-fddt2            1          platform-auth-internal
+tp-paut                        platform-auth-internal-5778cf6c58-jdg9k            1          platform-auth-internal
+tp-paut                        platform-auth-internal-5778cf6c58-ljxx7            1          platform-auth-internal
+tp-paut                        platform-auth-internal-5778cf6c58-lkcrh            1          platform-auth-internal
+tp-paut                        platform-auth-internal-5778cf6c58-nk6ck            1          platform-auth-internal
+tp-paut                        platform-auth-internal-5778cf6c58-ssgnl            1          platform-auth-internal
+tp-paut                        platform-auth-internal-5778cf6c58-sxvzk            1          platform-auth-internal
+tp-paut                        platform-auth-internal-5778cf6c58-xdjn2            1          platform-auth-internal
+tp-paut                        platform-auth-internal-5778cf6c58-xzmqv            1          platform-auth-internal
+tp-pays                        paymentsystems-internal-6d57895999-tpzn8           1          paymentsystems-internal
+tp-pays                        paymentsystems-internal-6d57895999-w94pz           1          paymentsystems-internal
+tp-pays-bat                    paymentsystems-batch-55997f4cd6-wddwq              1          paymentsystems-batch
+tp-pays-exp                    (no pods)                                          -          -
+tp-pays-ext                    (no pods)                                          -          -
+tp-pbus-int                    platform-eventbus-internal-85db5bf987-8ckhz        1          platform-eventbus-internal
+tp-pbus-int                    platform-eventbus-internal-85db5bf987-s7bwz        1          platform-eventbus-internal
+tp-pcam-int                    (no pods)                                          -          -
+tp-peod                        personaloverdraft-internal-api-5b767dbc56-d6vp4    2          personaloverdraft-internal-api,authenticator
+tp-peod                        personaloverdraft-internal-api-5b767dbc56-dxwdg    2          personaloverdraft-internal-api,authenticator
+tp-peod                        personaloverdraft-internal-api-5b767dbc56-rmqbt    2          personaloverdraft-internal-api,authenticator
+tp-peod-bat                    personaloverdraft-batch-api-bb6cfcc94-98hxg        1          personaloverdraft-batch-api
+tp-peod-bat                    personaloverdraft-batch-api-bb6cfcc94-jtr9p        1          personaloverdraft-batch-api
+tp-pfrm-int                    (no pods)                                          -          -
+tp-pgate                       platform-gate-internal-79f4d8d498-2hqm7            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-2k6x6            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-5bjgn            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-5jgxj            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-6ll84            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-72mx8            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-76z28            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-787nn            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-c2c4j            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-d52lh            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-f7vrs            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-g8st4            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-gtmrl            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-j862r            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-kf8ct            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-ls5fq            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-ltcsn            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-m7xdg            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-m8vmw            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-ndhj6            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-nrsl5            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-pbt86            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-pj4wv            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-pzv5p            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-qkxrd            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-qxk5g            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-rbt7m            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-s6rms            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-s8p8s            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-v2mf4            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-v7sql            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-x28rb            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-xx2hn            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-zkc7w            1          platform-gate-internal
+tp-pgate                       platform-gate-internal-79f4d8d498-zxpgw            1          platform-gate-internal
+tp-pins-int                    personaloverdraft-installment-internal-api-7d4cb49c67-mwrxm 1          personaloverdraft-installment-internal-api
+tp-pins-int                    personaloverdraft-installment-internal-api-7d4cb49c67-qtsrw 1          personaloverdraft-installment-internal-api
+tp-pllc-int                    platform-logconsumer-internal-api-7dddf577cb-7f5qs 1          platform-logconsumer-internal-api
+tp-pllc-int                    platform-logconsumer-internal-api-7dddf577cb-jz9ln 1          platform-logconsumer-internal-api
+tp-pllc-int                    platform-logconsumer-internal-api-7dddf577cb-q5xjk 1          platform-logconsumer-internal-api
+tp-pllc-int                    platform-logconsumer-internal-api-7dddf577cb-rx8gh 1          platform-logconsumer-internal-api
+tp-pllc-int                    platform-logconsumer-internal-api-7dddf577cb-sb2h7 1          platform-logconsumer-internal-api
+tp-pllc-int                    platform-logconsumer-internal-api-7dddf577cb-tqt75 1          platform-logconsumer-internal-api
+tp-pllc-int                    platform-logconsumer-internal-api-7dddf577cb-twmh2 1          platform-logconsumer-internal-api
+tp-pnote                       promissorynote-batch-ccf9cf9c-678zm                1          promissorynote-batch
+tp-pnote-int                   promissorynote-internal-5d4b5f8c87-4mr4x           1          promissorynote-internal
+tp-pnote-int                   promissorynote-internal-5d4b5f8c87-ngrnb           1          promissorynote-internal
+tp-polrv-int                   (no pods)                                          -          -
+tp-prsp                        prescription-batch-84fdd58897-6thrc                1          prescription-batch
+tp-prsp                        prescription-batch-84fdd58897-jj5dc                1          prescription-batch
+tp-prsp                        prescription-internal-6774bd684f-mdbwc             1          prescription-internal
+tp-prsp                        prescription-internal-6774bd684f-p8pgp             1          prescription-internal
+tp-prsp-bat                    (no pods)                                          -          -
+tp-prta                        branchtransfer-batch-546bd58c5c-frbqd              2          branchtransfer-batch,authenticator
+tp-prta                        branchtransfer-batch-546bd58c5c-zfp4x              2          branchtransfer-batch,authenticator
+tp-prta-int                    branchtransfer-internal-6c8c66456b-96b7t           1          branchtransfer-internal
+tp-prta-int                    branchtransfer-internal-6c8c66456b-gvm7k           1          branchtransfer-internal
+tp-pstm-bat                    (no pods)                                          -          -
+tp-push-int                    (no pods)                                          -          -
+tp-quot-int                    commercialloanquotation-internal-c9cccffb9-284zq   1          commercialloanquotation-internal
+tp-quot-int                    commercialloanquotation-internal-c9cccffb9-nssdx   1          commercialloanquotation-internal
+tp-raft-bat                    retailloan-aftersales-batch-api-5c64574c78-gf4rt   1          retailloan-aftersales-batch-api
+tp-raft-bat                    retailloan-aftersales-batch-api-5c64574c78-xlrr2   1          retailloan-aftersales-batch-api
+tp-raft-int                    retailloan-aftersales-internal-api-857586dff8-c9t6c 1          retailloan-aftersales-internal-api
+tp-raft-int                    retailloan-aftersales-internal-api-857586dff8-xtsrc 1          retailloan-aftersales-internal-api
+tp-rapp-exp                    retailloan-application-experience-api-6cdffb9fdd-dqvfn 1          retailloan-application-experience-api
+tp-rapp-exp                    retailloan-application-experience-api-6cdffb9fdd-hpqww 1          retailloan-application-experience-api
+tp-rbpm-int                    retailloan-bpm-internal-api-78d896bdcc-5pznf       1          retailloan-bpm-internal-api
+tp-rbpm-int                    retailloan-bpm-internal-api-78d896bdcc-xd45j       1          retailloan-bpm-internal-api
+tp-rcap-bat                    retailcollectionapp-batch-5d5c77dc55-5d84d         1          retailcollectionapp-batch
+tp-rcap-int                    retailcollectionapp-internal-b49cc6574-66krb       1          retailcollectionapp-internal
+tp-rced-bat                    retailcollendofday-batch-5cdfc448f-9bg22           1          retailcollendofday-batch
+tp-rcid-bat                    retailcollintraday-batch-6cc99945c7-vc4pw          1          retailcollintraday-batch
+tp-rcrd-int                    retailloan-card-internal-67779d997d-5tq7n          1          retailloan-card-internal
+tp-rcrd-int                    retailloan-card-internal-67779d997d-qgfbf          1          retailloan-card-internal
+tp-rdcs-int                    retailloan-decision-internal-api-689d95464-47sqf   2          retailloan-decision-internal-api,authenticator
+tp-rdcs-int                    retailloan-decision-internal-api-689d95464-tf6x4   2          retailloan-decision-internal-api,authenticator
+tp-rdlr-bat                    retailloan-dealer-batch-api-66c7887c46-l96s2       1          retailloan-dealer-batch-api
+tp-rdlr-bat                    retailloan-dealer-batch-api-66c7887c46-vb66r       1          retailloan-dealer-batch-api
+tp-rdlr-exp                    retailloan-dealer-experience-api-5d7465df69-x597t  2          retailloan-dealer-experience-api,authenticator
+tp-rdlr-exp                    retailloan-dealer-experience-api-5d7465df69-zg86k  2          retailloan-dealer-experience-api,authenticator
+tp-rdlr-int                    retailloan-dealer-internal-api-845f7dc8bf-ktdqc    2          retailloan-dealer-internal-api,authenticator
+tp-rdlr-int                    retailloan-dealer-internal-api-845f7dc8bf-wplmd    2          retailloan-dealer-internal-api,authenticator
+tp-rdoc-int                    retailloan-document-internal-api-6c9898f59-7vwd4   1          retailloan-document-internal-api
+tp-rdoc-int                    retailloan-document-internal-api-6c9898f59-p588x   1          retailloan-document-internal-api
+tp-rkkb-bat                    retailloan-kkb-batch-api-54cf8c8877-cg2sr          1          retailloan-kkb-batch-api
+tp-rkkb-bat                    retailloan-kkb-batch-api-54cf8c8877-rpctd          1          retailloan-kkb-batch-api
+tp-rkkb-ext                    (no pods)                                          -          -
+tp-rkkb-int                    retailloan-kkb-internal-api-647fd45cd7-fbznt       1          retailloan-kkb-internal-api
+tp-rkkb-int                    retailloan-kkb-internal-api-647fd45cd7-l69gr       1          retailloan-kkb-internal-api
+tp-rmrg-int                    retailloan-mortgage-internal-api-f4d8cd9c7-5cjgt   1          retailloan-mortgage-internal-api
+tp-rmrg-int                    retailloan-mortgage-internal-api-f4d8cd9c7-cl78d   1          retailloan-mortgage-internal-api
+tp-rntf-int                    retailloan-notify-internal-8cf998b7f-ncr9l         1          retailloan-notify-internal
+tp-rntf-int                    retailloan-notify-internal-8cf998b7f-vghfg         1          retailloan-notify-internal
+tp-rpdl-exp                    partnership-dealer-experience-api-6c84bc9748-6qlvk 1          partnership-dealer-experience-api
+tp-rpdl-exp                    partnership-dealer-experience-api-6c84bc9748-hq5j9 1          partnership-dealer-experience-api
+tp-rpdl-int                    partnership-dealer-internal-688875dc7f-hmk2z       1          partnership-dealer-internal
+tp-rpdl-int                    partnership-dealer-internal-688875dc7f-l5glk       1          partnership-dealer-internal
+tp-rpos-bat                    retailloan-partnership-batch-6f4db779db-vq8r4      1          retailloan-partnership-batch
+tp-rpos-bat                    retailloan-partnership-batch-6f4db779db-xgckj      1          retailloan-partnership-batch
+tp-rpos-exp                    retailloan-partnership-experience-774b7454c6-xl562 1          retailloan-partnership-experience
+tp-rpos-exp                    retailloan-partnership-experience-774b7454c6-ztjs5 1          retailloan-partnership-experience
+tp-rpos-int                    retailloan-partnership-internal-5d686fd698-bt7hz   1          retailloan-partnership-internal
+tp-rpos-int                    retailloan-partnership-internal-5d686fd698-ljwm7   1          retailloan-partnership-internal
+tp-rrpt-int                    retailloan-report-internal-api-c4f779fb-g4ztc      1          retailloan-report-internal-api
+tp-rrpt-int                    retailloan-report-internal-api-c4f779fb-gfwfl      1          retailloan-report-internal-api
+tp-rskn-bat                    commercialloanrediscount-batch-58864cb564-f2xb4    2          commercialloanrediscount-batch,authenticator
+tp-rskn-bat                    commercialloanrediscount-batch-58864cb564-qp587    2          commercialloanrediscount-batch,authenticator
+tp-rskn-int                    commercialloanrediscount-internal-57d87789c6-dw2pp 1          commercialloanrediscount-internal
+tp-rskn-int                    commercialloanrediscount-internal-57d87789c6-rqbc6 1          commercialloanrediscount-internal
+tp-rtcl-int                    retailcollection-internal-d85848cb4-gnwg4          1          retailcollection-internal
+tp-rtln                        retailloan-internal-api-dc875fb7b-69bxx            1          retailloan-internal-api
+tp-rtln                        retailloan-internal-api-dc875fb7b-6n8rj            1          retailloan-internal-api
+tp-rtln                        retailloan-internal-api-dc875fb7b-8pmsc            1          retailloan-internal-api
+tp-rtln                        retailloan-internal-api-dc875fb7b-g2xnz            1          retailloan-internal-api
+tp-rtln                        retailloan-internal-api-dc875fb7b-lbrfp            1          retailloan-internal-api
+tp-rtln                        retailloan-internal-api-dc875fb7b-mt96w            1          retailloan-internal-api
+tp-rtln-bat                    retailloan-batch-api-b994dd6c4-72bxj               2          retailloan-batch-api,authenticator
+tp-rtln-bat                    retailloan-batch-api-b994dd6c4-fhwq7               2          retailloan-batch-api,authenticator
+tp-rtop-exp                    requesttopayment-experience-api-6b57bb5657-cwf7x   2          requesttopayment-experience-api,authenticator
+tp-rtop-exp                    requesttopayment-experience-api-6b57bb5657-swrmt   2          requesttopayment-experience-api,authenticator
+tp-rtop-ext                    (no pods)                                          -          -
+tp-rtop-int                    requesttopayment-internal-79bd894665-4l82m         2          requesttopayment-internal,authenticator
+tp-rtop-int                    requesttopayment-internal-79bd894665-8rcr9         2          requesttopayment-internal,authenticator
+tp-rtop-int                    requesttopayment-internal-79bd894665-glpdr         2          requesttopayment-internal,authenticator
+tp-rtop-int                    requesttopayment-internal-79bd894665-v6kks         2          requesttopayment-internal,authenticator
+tp-sav                         saving-internal-76dcd49c9-68g7t                    1          saving-internal
+tp-sav                         saving-internal-76dcd49c9-gdp95                    1          saving-internal
+tp-sav                         saving-internal-76dcd49c9-l2hd8                    1          saving-internal
+tp-sav                         saving-internal-76dcd49c9-lvg7f                    1          saving-internal
+tp-sav-bat                     saving-batch-6566b94d8-tgwjg                       1          saving-batch
+tp-sav-exp                     (no pods)                                          -          -
+tp-sav-ext                     (no pods)                                          -          -
+tp-savcamp-bat                 savingcampaign-batch-6875485989-vnx5d              1          savingcampaign-batch
+tp-savcamp-int                 savingcampaign-internal-6cc65ddb56-hrqwc           1          savingcampaign-internal
+tp-savcamp-int                 savingcampaign-internal-6cc65ddb56-szt9m           1          savingcampaign-internal
+tp-savdep-bat                  (no pods)                                          -          -
+tp-savdep-int                  savingdeposit-internal-7bb9b44f4-fbn4w             1          savingdeposit-internal
+tp-savdep-int                  savingdeposit-internal-7bb9b44f4-zwghh             1          savingdeposit-internal
+tp-savint-bat                  savinginterest-batch-7d4b786645-vqn5l              1          savinginterest-batch
+tp-savint-int                  savinginterest-internal-fff48c5db-5lf7t            1          savinginterest-internal
+tp-savint-int                  savinginterest-internal-fff48c5db-82x54            1          savinginterest-internal
+tp-savorg-bat                  savingorange-batch-749d5f55bf-phvqj                1          savingorange-batch
+tp-savorg-int                  savingorange-internal-69cf47c74-98gvx              1          savingorange-internal
+tp-savorg-int                  savingorange-internal-69cf47c74-x55m8              1          savingorange-internal
+tp-savorgcorp-bat              (no pods)                                          -          -
+tp-savorgcorp-int              (no pods)                                          -          -
+tp-sbox                        security-box-internal-f454749f5-4htcw              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-4j6xp              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-4vl58              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-5fdjt              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-8km56              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-bh6zr              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-clbb2              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-f2qwj              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-hv2fd              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-jn4fg              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-qvx2q              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-rkmgt              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-tdfzc              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-tfn6j              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-x28nb              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-xj52j              1          security-box-internal
+tp-sbox                        security-box-internal-f454749f5-xnksj              1          security-box-internal
+tp-sbs-int                     (no pods)                                          -          -
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-2t8sw   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-2twn9   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-4dwgc   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-6488h   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-7vsrb   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-8l8lt   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-97d2b   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-bgsln   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-bwqjh   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-cb82j   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-h24q8   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-jqpz2   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-kx46b   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-l6kvm   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-ngr78   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-nxpp7   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-qcj74   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-rf59z   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-s9pv4   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-wlqm4   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-xw8js   1          security-gateway-experience-api
+tp-scgw                        security-gateway-experience-api-5bbf65f94f-z8wcn   1          security-gateway-experience-api
+tp-sfdb                        safedepositbox-internal-api-c95d546bd-86ffx        2          safedepositbox-internal-api,authenticator
+tp-sfdb                        safedepositbox-internal-api-c95d546bd-xm7zs        2          safedepositbox-internal-api,authenticator
+tp-sfdb-bat                    safedepositbox-batch-api-6494dd4cc4-pf65h          2          safedepositbox-batch-api,authenticator
+tp-sfsy                        supplierfinancesystem-internal-85f7889ccf-bkhvg    2          supplierfinancesystem-internal,authenticator
+tp-sfsy                        supplierfinancesystem-internal-85f7889ccf-pdkbr    2          supplierfinancesystem-internal,authenticator
+tp-sfwy                        safeway-internal-7bd68bb98b-l268m                  1          safeway-internal
+tp-sfwy                        safeway-internal-7bd68bb98b-llzvg                  1          safeway-internal
+tp-sfwy                        safeway-internal-7bd68bb98b-mgmk8                  1          safeway-internal
+tp-shrpi-int                   sharepointintegration-internal-7f85c6d6b7-9j7rl    1          sharepointintegration-internal
+tp-shrpi-int                   sharepointintegration-internal-7f85c6d6b7-gldt7    1          sharepointintegration-internal
+tp-slry                        salarypayments-internal-7bbd585b8d-6czvx           1          salarypayments-internal
+tp-slry                        salarypayments-internal-7bbd585b8d-6pgnz           1          salarypayments-internal
+tp-slry-bat                    salarypayments-batch-64c78596d6-2s257              2          salarypayments-batch,authenticator
+tp-sqtr-bat                    (no pods)                                          -          -
+tp-sqtr-int                    (no pods)                                          -          -
+tp-sspy                        socialsecuritypayments-internal-6dd8bfc4b6-2s8ht   1          socialsecuritypayments-internal
+tp-sspy                        socialsecuritypayments-internal-6dd8bfc4b6-6gkh6   1          socialsecuritypayments-internal
+tp-ss                          (no pods)                                          -          -
