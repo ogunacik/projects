@@ -7,14 +7,14 @@ NAMESPACE                           DR COUNT        PROD COUNT
 tp-accey-bat                        2               2
 tp-anym                             2               2
 tp-bpmi                             2               2
-tp-card-exp                         2               2
+tp-card-exp                         2               2 farklı versiyon, helm release yok
 tp-cardorx-int                      2               2
 tp-cdcr                             2               2
-tp-clgr-bat                         -               2
+tp-clgr-bat                         -               2 dr deployment yok
 tp-cmdl-int                         2               2
 tp-crm-int                          2               2
 tp-dbup-int                         2               2
-tp-eft                              2               1
+tp-eft                              2               1 dr sidecar olmaması gerekiyor
 tp-exps                             2               2
 tp-fraud                            2               2
 tp-inft-bat                         2               2
