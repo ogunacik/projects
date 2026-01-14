@@ -1,0 +1,43 @@
+================================================================================
+PROJECTS WITH 2 CONTAINERS (in DR or PROD)
+================================================================================
+
+NAMESPACE                           DR COUNT        PROD COUNT
+-----------------------------------------------------------------
+tp-accey-bat                        2               2
+tp-anym                             2               2
+tp-bpmi                             2               2
+tp-card-exp                         2               2
+tp-cardorx-int                      2               2
+tp-cdcr                             2               2
+tp-clgr-bat                         -               2
+tp-cmdl-int                         2               2
+tp-crm-int                          2               2
+tp-dbup-int                         2               2
+tp-eft                              2               1
+tp-exps                             2               2
+tp-fraud                            2               2
+tp-inft-bat                         2               2
+tp-insp-bat                         2               1
+tp-invp                             2               2
+tp-ltry                             2               2
+tp-mrch-exp                         2               2
+tp-mrch-ext                         2               2
+tp-nplk-int                         2               2
+tp-nplt-bat                         2               2
+tp-peod                             2               1
+tp-prta                             2               2
+tp-rdcs-int                         2               2
+tp-rdlr-exp                         2               2
+tp-rdlr-int                         2               1
+tp-rskn-bat                         2               2
+tp-rtln-bat                         2               1
+tp-rtop-exp                         2               2
+tp-rtop-int                         2               2
+tp-sfdb                             2               2
+tp-sfdb-bat                         2               2
+tp-sfsy                             2               2
+tp-slry-bat                         2               2
+
+-----------------------------------------------------------------
+Total: 34 projects
