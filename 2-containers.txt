@@ -7,14 +7,14 @@ NAMESPACE                           DR COUNT        PROD COUNT
 tp-accey-bat                        2               2
 tp-anym                             2               2
 tp-bpmi                             2               2
-tp-card-exp                         2               2 farklı versiyon, helm release yok
+tp-card-exp                         2               2 farklı versiyon
 tp-cardorx-int                      2               2
 tp-cdcr                             2               2
 tp-clgr-bat                         -               2 dr deployment yok
 tp-cmdl-int                         2               2
 tp-crm-int                          2               2
 tp-dbup-int                         2               2
-tp-eft                              2               1 dr sidecar olmaması gerekiyor
+tp-eft                              2               1 dr yanlış
 tp-exps                             2               2
 tp-fraud                            2               2
 tp-inft-bat                         2               2
@@ -29,9 +29,9 @@ tp-peod                             2               1 dr yanlış
 tp-prta                             2               2
 tp-rdcs-int                         2               2
 tp-rdlr-exp                         2               2
-tp-rdlr-int                         2               1
+tp-rdlr-int                         2               1 dr yanlış
 tp-rskn-bat                         2               2
-tp-rtln-bat                         2               1
+tp-rtln-bat                         2               1 dr yanlış
 tp-rtop-exp                         2               2
 tp-rtop-int                         2               2
 tp-sfdb                             2               2
