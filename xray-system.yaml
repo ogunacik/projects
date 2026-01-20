@@ -1,0 +1,42 @@
+shared:
+    database:
+        type: postgresql
+        driver: org.postgresql.Driver
+        url: postgres://arti01.localdomain:5432/xray_db?sslmode=disable
+        username: admin
+        password: 
+    rabbitMq:
+        url: amqps://xray01:5671
+        certCaFilePath: "/apps/xray/var/data/server/certs/ca-cert.pem"
+        certFilePath: "/apps/xray/var/data/server/certs/client-cert.pem"
+        certKeyFilePath: "/apps/xray/var/data/server/certs/client-key.pem"
+        autoStop: true
+        active:
+            node:
+                name: xray
+        password: 
+        node:
+            rabbitmqConf:
+                - name: ssl_options.cacertfile
+                  value: /apps/xray/var/data/rabbitmq/certs/ca-cert.pem
+                - name: ssl_options.certfile
+                  value: /apps/xray/var/data/rabbitmq/certs/server-cert.pem
+                - name: ssl_options.keyfile
+                  value: /apps/xray/var/data/rabbitmq/certs/server-key.pem
+                - name: ssl_options.verify
+                  value: verify_peer
+                - name: ssl_options.fail_if_no_peer_cert
+                  value: false
+                - name: management.listener.ssl
+                  value: true
+                - name: listeners.ssl.default
+                  value: 5671
+                - name: listeners.tcp
+                  value: none
+    node:
+        ip: 192.168.5.101
+    security:
+        joinKey: 
+    jfrogUrl: http://arti01.localdomain:8082
+    user: xray
+    group: xray
