@@ -1,1 +1,1 @@
-docker run -d   --name oracle-xe   -p 1521:1521   -p 5500:5500   -e ORACLE_PWD=Pascal12   -e ORACLE_CHARACTERSET=AL32UTF8   -e INIT_SGA_SIZE=1024   -e INIT_PGA_SIZE=256   --shm-size=1g   container-registry.oracle.com/database/express:latest
+ docker run -d   --name oracle-service   -p 1521:1521   -p 5500:5500   -e ORACLE_PWD=Pascal12   -e ORACLE_CHARACTERSET=AL32UTF8   -e INIT_SGA_SIZE=1024   -e INIT_PGA_SIZE=256   -e ORACLE_EDITION=enterprise   --shm-size=1g   container-registry.oracle.com/database/express:latest
