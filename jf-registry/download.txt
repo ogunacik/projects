@@ -1,0 +1,11 @@
+https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/jcr/jfrog-artifactory-jcr/[RELEASE]/jfrog-artifactory-jcr-[RELEASE]-linux.tar.gz
+
+
+curl -g -L -O -J 'https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/jcr/docker/jfrog-artifactory-jcr/[RELEASE]/jfrog-artifactory-jcr-[RELEASE]-compose.tar.gz'
+
+
+start postgresql:    docker compose -p rt-postgres -f docker-compose-postgres.yaml up -d
+docker compose -p rt up -d
+stop  postgresql:    docker compose -p rt-postgres -f docker-compose-postgres.yaml down
+start:
+stop:                docker compose -p rt down

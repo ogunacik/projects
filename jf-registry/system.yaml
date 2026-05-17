@@ -1,0 +1,14 @@
+shared:
+  node:
+    ip: 192.168.5.101
+    id: localhost.localdomain
+    name: localhost
+  database:
+    type: postgresql
+    driver: org.postgresql.Driver
+    password: Pascal@12
+    username: artifactory
+    url: jdbc:postgresql://192.168.5.101:5432/artifactory
+router:
+  entrypoints:
+    externalPort: 8082
