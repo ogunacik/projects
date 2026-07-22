@@ -1,0 +1,25 @@
+include         /etc/openldap/schema/core.schema
+include         /etc/openldap/schema/cosine.schema
+include         /etc/openldap/schema/inetorgperson.schema
+include         /etc/openldap/schema/nis.schema
+
+pidfile         /run/openldap/slapd.pid
+argsfile        /run/openldap/slapd.args
+
+TLSCertificateFile      /certs/ldap.crt
+TLSCertificateKeyFile   /certs/ldap.key
+TLSCACertificateFile    /certs/ldap.crt
+
+modulepath      /usr/lib/openldap
+moduleload      back_ldif.so
+
+database        ldif
+suffix          "{{LDAP_BASE_DN}}"
+rootdn          "{{LDAP_ADMIN_DN}}"
+rootpw          {{LDAP_ADMIN_PASSWORD}}
+directory       /var/lib/openldap/openldap-data
+
+access to *
+  by dn.exact="{{LDAP_ADMIN_DN}}" write
+  by users read
+  by anonymous auth

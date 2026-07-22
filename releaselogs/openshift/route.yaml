@@ -1,0 +1,17 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: releaselogs
+  labels:
+    app.kubernetes.io/name: releaselogs
+    app.kubernetes.io/component: web
+spec:
+  to:
+    kind: Service
+    name: releaselogs
+    weight: 100
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

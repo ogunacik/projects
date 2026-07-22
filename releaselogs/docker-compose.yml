@@ -1,0 +1,187 @@
+services:
+  # Elasticsearch Storage and Indexing Node
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.2
+    container_name: elasticsearch
+    environment:
+      - node.name=elasticsearch
+      - cluster.name=production-observability-cluster
+      - discovery.type=single-node
+      - ELASTIC_PASSWORD=super-secure-production-elastic-key
+      - xpack.security.enabled=true
+      - xpack.security.http.ssl.enabled=true
+      - xpack.security.http.ssl.key=certs/elasticsearch.key
+      - xpack.security.http.ssl.certificate=certs/elasticsearch.crt
+      - xpack.security.http.ssl.certificate_authorities=certs/ca.crt
+      - xpack.security.transport.ssl.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    volumes:
+      - es_data_fresh:/usr/share/elasticsearch/data
+      - ./certs:/usr/share/elasticsearch/config/certs:ro
+    ports:
+      - "9200:9200"
+    networks:
+      - secops_network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s --cacert /usr/share/elasticsearch/config/certs/ca.crt -u elastic:super-secure-production-elastic-key https://localhost:9200/_cluster/health | grep -q 'green\\|yellow'"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+
+  # Official Kibana Dashboard Deployment
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.12.2
+    container_name: kibana
+    environment:
+      - SERVER_NAME=kibana.internal
+      - ELASTICSEARCH_HOSTS=https://elasticsearch:9200
+      - ELASTICSEARCH_USERNAME=kibana_system
+      - ELASTICSEARCH_PASSWORD=kibana-system-change-me
+      - ELASTICSEARCH_SSL_CERTIFICATEAUTHORITIES=/usr/share/kibana/config/certs/ca.crt
+    ports:
+      - "5621:5601"
+    networks:
+      - secops_network
+    depends_on:
+      elasticsearch-init:
+        condition: service_completed_successfully
+    volumes:
+      - ./certs:/usr/share/kibana/config/certs:ro
+
+  # Private MinIO (S3 Engine) For Decrypted Log Archiving
+  minio:
+    image: quay.io/minio/minio:latest
+    container_name: minio
+    command: server /data --console-address ":9001"
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    ports:
+      - "9000:9000" # S3 API endpoint
+      - "9001:9001" # MinIO Web Admin console
+    volumes:
+      - minio_data:/data
+      - ./certs/minio.crt:/root/.minio/certs/public.crt:ro
+      - ./certs/minio.key:/root/.minio/certs/private.key:ro
+      - ./certs/ca.crt:/root/.minio/certs/CAs/releaselogs-local-ca.crt:ro
+    networks:
+      - secops_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "--cacert", "/root/.minio/certs/CAs/releaselogs-local-ca.crt", "https://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 5s
+      retries: 3
+
+  # Dedicated container helper to automatically bootstrap buckets in MinIO S3 on start
+  minio-init:
+    image: minio/mc:latest
+    container_name: minio_init
+    depends_on:
+      minio:
+        condition: service_healthy
+    entrypoint: >
+      /bin/sh -c "
+      /usr/bin/mc alias set local-minio https://minio:9000 minioadmin minioadmin;
+      /usr/bin/mc mb --ignore-existing local-minio/elastic-kibana-logs;
+      /usr/bin/mc policy set public local-minio/elastic-kibana-logs;
+      echo 'MinIO Bucket initialization complete.';
+      "
+    volumes:
+      - ./certs/ca.crt:/root/.mc/certs/CAs/releaselogs-local-ca.crt:ro
+    networks:
+      - secops_network
+
+  # Local LDAPS directory with AD-style attributes for development and demos
+  ldap-server:
+    build:
+      context: ./docker/ldap
+      dockerfile: Dockerfile
+    container_name: ldap-server
+    environment:
+      - LDAP_BASE_DN=dc=ing,dc=local
+      - LDAP_ADMIN_DN=cn=admin,dc=ing,dc=local
+      - LDAP_ADMIN_PASSWORD=admin
+    entrypoint: ["/bin/sh", "/entrypoint.sh"]
+    ports:
+      - "389:389"
+      - "636:636"
+    volumes:
+      - ldap_data:/var/lib/openldap/openldap-data
+      - ./docker/ldap/bootstrap:/bootstrap:ro
+      - ./docker/ldap/certs:/certs:ro
+      - ./docker/ldap/entrypoint.sh:/entrypoint.sh:ro
+      - ./docker/ldap/slapd.conf.template:/etc/openldap/slapd.conf.template:ro
+    networks:
+      - secops_network
+
+  ldap-test:
+    image: alpine:3.20
+    container_name: ldap-test
+    depends_on:
+      - ldap-server
+    volumes:
+      - ./docker/ldap/ldap-test.sh:/usr/local/bin/ldap-test.sh:ro
+      - ./docker/ldap/certs:/certs:ro
+      - ./config.yaml:/config/config.yaml:ro
+    environment:
+      LDAP_SERVER_URL: ${LDAP_SERVER_URL:-ldaps://ldap-server:636}
+      LDAP_BIND_DN: ${LDAP_BIND_DN:-cn=admin,dc=ing,dc=local}
+      LDAP_BIND_PASSWORD: ${LDAP_BIND_PASSWORD:-admin}
+      LDAP_BASE_DN: ${LDAP_BASE_DN:-ou=users,dc=ing,dc=local}
+      LDAP_VERIFY_CERTS: ${LDAP_VERIFY_CERTS:-false}
+    entrypoint: ["/bin/sh", "/usr/local/bin/ldap-test.sh"]
+    networks:
+      - secops_network
+
+  # Dedicated container helper to automatically bootstrap and seed Elasticsearch indices on start
+  elasticsearch-init:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: elasticsearch_init
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    command: ["node", "dist/init-es.cjs"]
+    environment:
+      - CONFIG_PATH=/app/data/config.yaml
+      - KIBANA_SYSTEM_PASSWORD=kibana-system-change-me
+    volumes:
+      - ./config.yaml:/app/data/config.yaml:ro
+    networks:
+      - secops_network
+
+  # Main Application Backend Server & S3-Proxy Gateway
+  releaselogs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: releaselogs
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - APP_DATA_DIR=/app/data
+      - CONFIG_PATH=/app/data/config.yaml
+    volumes:
+      - app_data:/app/data
+      - ./config.yaml:/app/data/config.yaml
+    ports:
+      - "3000:3000"
+      - "443:3443"
+    networks:
+      - secops_network
+
+
+volumes:
+  app_data:
+    driver: local
+  es_data_fresh:
+    driver: local
+  minio_data:
+    driver: local
+  ldap_data:
+    driver: local
+
+networks:
+  secops_network:
+    driver: bridge

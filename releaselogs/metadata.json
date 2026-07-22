@@ -1,0 +1,6 @@
+{
+  "name": "releaselogs",
+  "description": "Elasticsearch security search portal with real-time audit tracing, S3 proxy gateway, and custom export options.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
